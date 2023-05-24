@@ -14,20 +14,20 @@ let listaSpesa = [
 console.log(listaSpesa)
 
 //recupero ul dal documento
-let lista = document.getElementById('lista')
+let lista = document.getElementById('lista');
 console.log(lista)
 
 //ciclo while con aggiunta li e visualizzazione a video con append
 let i = 0 
 while(i < listaSpesa.length) {
-    console.log(listaSpesa[i])
+    console.log(listaSpesa[i]);
     i++;
-    let item = listaSpesa[i]
+    let item = listaSpesa[i];
     
-    let list_item = document.createElement('li')
-    list_item.innerText = item
+    let list_item = document.createElement('li');
+    list_item.innerText = item;
     
-    lista.append(list_item)
+    lista.append(list_item);
 
 }
     
