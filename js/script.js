@@ -1,3 +1,4 @@
+//array lista spesa
 let listaSpesa = [
     'Scamorza',
     'Funghi',
@@ -12,14 +13,21 @@ let listaSpesa = [
 ];
 console.log(listaSpesa)
 
-
+//recupero ul dal documento
 let lista = document.getElementById('lista')
 console.log(lista)
 
-let sequenza = 0 
-while(sequenza < listaSpesa.length) {
-    console.log(listaSpesa[sequenza])
-    sequenza++;
+//ciclo while con aggiunta li e visualizzazione a video con append
+let i = 0 
+while(i < listaSpesa.length) {
+    console.log(listaSpesa[i])
+    i++;
+    let item = listaSpesa[i]
+    
+    let list_item = document.createElement('li')
+    list_item.innerText = item
+    
+    lista.append(list_item)
 
 }
     
