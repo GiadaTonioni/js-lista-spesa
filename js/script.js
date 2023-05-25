@@ -21,11 +21,12 @@ console.log(lista)
 let i = 0 
 while(i < listaSpesa.length) {
     console.log(listaSpesa[i]);
-    i++;
+    
     let item = listaSpesa[i];
     
     let list_item = document.createElement('li');
     list_item.innerText = item;
+    i++;
     
     lista.append(list_item);
 
